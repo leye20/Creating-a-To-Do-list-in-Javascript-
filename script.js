@@ -1,16 +1,14 @@
 var myForm = document.getElementById( 'myform' );
 
-myForm = document.addEventListener( 'click', function ( event ) {
+myForm = document.addEventListener( 'submit', function ( event ) {
     event.preventDefault();
 
-    var toDoList = document.querySelector( 'form > label > input' );
+    var toDoList = document.getElementById( 'tasklist' );
 
-    var newRow = document.createElement( 'TD' );
-    newCell.textContent = toDoListValue;
-    newRow.appendChild( 'li' );
-    
-    var newCell = document.createElement( 'li' );
-    newCell.textContent = newValue;
-    newCell.appendChild( newCell );
+    var toDoListValue = document.getElementById( 'todolist' ).value;
 
+    var newRow = document.createElement( 'li' );
+    newRow.textContent = toDoListValue;
+    toDoList.appendChild( newRow );
+        
 });
