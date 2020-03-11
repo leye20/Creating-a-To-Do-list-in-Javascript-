@@ -7,7 +7,7 @@ myForm = document.addEventListener( 'submit', function ( event ) {
 
     var toDoListValue = document.getElementById( 'todolist' ).value;
 
-    var newRow = document.createElement( 'li' );
+    var newRow = document.createElement( 'checkbox' + 'li');
     newRow.textContent = toDoListValue;
     toDoList.appendChild( newRow );
         
